@@ -10,7 +10,7 @@ This repository is more than a project scaffold; it's a complete operating syste
 
 ## ✨ Key Features
 
--   🧠 **Persona-Driven Execution**: Work with a guild of specialized AI savants, from a `Project Manager` to a `Nexus Architect`, ensuring expert oversight at every stage.
+-   🧠 **Persona-Driven Execution**: Work with a guild of specialized AI savants, ensuring expert oversight at every stage.
 -   🗂️ **Structured Planning Templates**: Utilize a comprehensive set of Markdown templates (`PRD`, `Architecture`, `TestPlan`) to build a deep, shared context for the AI.
 -   ⚙️ **Phase-Gated Workflow**: Progress through the software development lifecycle with explicit quality gates, ensuring discipline and preventing costly mistakes.
 -   ⚖️ **Customizable Quality Rules**: Define your project's engineering standards for code, testing, and security directly in the `.cursorrules` file.
@@ -22,13 +22,18 @@ This repository is more than a project scaffold; it's a complete operating syste
 
 PolyChronos comes with a full team of AI savants. Here are some of the key players you'll be working with:
 
+#### Strategic & Leadership
 -   🔭 **Visionary Planner**: Your strategic guide who identifies market opportunities and defines the project's North Star.
 -   🗺️ **Product Strategist**: The voice of the user, translating their needs into a prioritized roadmap and actionable stories.
 -   🎯 **Project Manager**: The master orchestrator who creates clarity, manages risk, and keeps the project moving with momentum.
 -   📜 **The Loremaster**: The guardian of the project's knowledge, who transforms scattered information into a single, clear source of truth.
--   🏛️ **Savant Architect**: The master builder who designs resilient, scalable, and secure system architectures.
+
+#### Architectural & Engineering
+-   🏛️ **Savant Architect**: The holistic system architect who designs the high-level blueprint, ensuring all components (front end, back end, AI) fit together perfectly.
+-   🎨 **Front End Architect & Designer**: The master artist of the user experience, who crafts beautiful, intuitive, and bleeding-edge interfaces.
+-   ⚙️ **Back End Architect & Designer**: The master engineer of the system's core, who builds the powerful, scalable, and reliable server-side foundation.
 -   🧠 **Nexus Architect**: The AI genius who architects emergent intelligence and autonomous agentic systems.
--   👷 **Lead Engineer**: The hands-on craftsperson who translates architecture into impeccable code and mentors the team.
+-   👷 **Lead Engineer**: The hands-on craftsperson who leads the implementation of the architecture and mentors the engineering team.
 
 ---
 
@@ -50,7 +55,7 @@ Follow these steps to initialize the framework and begin your first project. **T
     ```
 2.  **Complete the Discovery Document**: Begin by filling out `/docs/living/Discovery.md`. This captures the high-level business case and validates the opportunity.
 3.  **Define the Product with the PRD**: With the discovery validated, complete the `/docs/living/PRD.md`. This defines *what* you're building and *why*.
-4.  **Architect the Solution**: Based on the PRD, fill out the `/docs/living/Architecture.md` to define the technical blueprint for the project.
+4.  **Architect the Solution**: Based on the PRD, fill out the `/docs/living/Architecture.md`. This is a collaborative effort led by the **Savant Architect**, with crucial input from the **Front End** and **Back End** specialists.
 5.  **Configure Project Rules**: Open `.cursorrules` and adjust any settings, like the default persona or code quality thresholds, to fit your needs.
 6.  **Activate PolyChronos**: In Cursor, set the contents of `/.cursor/prompts/PolyChronos-Omega.md` as your project's system prompt.
 7.  **Engage the Project Manager**: The AI `Project Manager` will now activate, review your completed templates, and begin orchestrating the build. Advance through phases using the **👍 `Proceed`** command when prompted.
@@ -71,6 +76,4 @@ The repository is organized to clearly separate context, documentation, and prom
 ├── docs/
 │   ├── living/                     # Core planning templates (PRD, Architecture, etc.)
 │   └── archives/                   # For historical versions of documents
-├── prompts/
-│   └── core/                       # Phase-specific prompts used by the system
 └── .cursorrules                    # Project-wide quality gates and AI behavior rules
