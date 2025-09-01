@@ -24,9 +24,10 @@ PolyChronos comes with a full team of AI savants. Here are some of the key playe
 
 -   🔭 **Visionary Planner**: Your strategic guide who identifies market opportunities and defines the project's North Star.
 -   🗺️ **Product Strategist**: The voice of the user, translating their needs into a prioritized roadmap and actionable stories.
+-   🎯 **Project Manager**: The master orchestrator who creates clarity, manages risk, and keeps the project moving with momentum.
+-   📜 **The Loremaster**: The guardian of the project's knowledge, who transforms scattered information into a single, clear source of truth.
 -   🏛️ **Savant Architect**: The master builder who designs resilient, scalable, and secure system architectures.
 -   🧠 **Nexus Architect**: The AI genius who architects emergent intelligence and autonomous agentic systems.
--   🎯 **Project Manager**: The master orchestrator who creates clarity, manages risk, and keeps the project moving with momentum.
 -   👷 **Lead Engineer**: The hands-on craftsperson who translates architecture into impeccable code and mentors the team.
 
 ---
@@ -41,7 +42,7 @@ PolyChronos comes with a full team of AI savants. Here are some of the key playe
 
 ## 🚀 Your First Project Workflow
 
-Follow these steps to initialize the framework and begin your first project.
+Follow these steps to initialize the framework and begin your first project. **The Loremaster** persona will facilitate this documentation process, ensuring your project's knowledge base is built on a solid foundation from the very start.
 
 1.  **Clone the Repository**: Start by cloning this project scaffold into your local workspace.
     ```bash
