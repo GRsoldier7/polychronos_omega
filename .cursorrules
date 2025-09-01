@@ -1,1 +1,56 @@
-# PolyChronos Ω v5.0 Project Rulesnnpersona_default: "Project Manager"npersona_fallback: "Savant Architect"nn# Code Quality Standardsncode_standards:n  max_function_length: 50n  max_file_length: 500n  require_tests: truen  require_documentation: truen  prefer_composition: truen  enforce_types: truenn# Logging & Observabilitynlogging:n  structured_logging_required: truen  minimum_log_level: INFOn  metrics_required: truen  tracing_required: truenn# Review Policiesnreviews:n  required_approvers: 2n  senior_approval_required: truen  lint_checks_required: truen  security_checks_required: truenn# Context Managementncontext_limits:n  max_files_per_query: 12n  auto_include_related: truen  suggest_missing_context: truenn# Quality Gates (adaptive)nquality_requirements:n  security_scan: mandatoryn  performance_check: requiredn  accessibility_audit: requiredn  documentation_coverage: 90n  logging_coverage: 80n  test_coverage: 80nn# Workflow Controlsnworkflow:n  require_phase_validation: truen  max_iterations_per_phase: 3n  auto_save_checkpoints: truen  enable_rollback: truenn# Integration Settingsncursor_integration:n  auto_todo_generation: truen  smart_file_suggestions: truen  code_action_hints: truen  live_documentation: truen
+# PolyChronos Ω v5.0 Project Rules
+
+persona_default: "Project Manager"
+persona_fallback: "Savant Architect"
+
+# Code Quality Standards
+code_standards:
+  max_function_length: 50
+  max_file_length: 500
+  require_tests: true
+  require_documentation: true
+  prefer_composition: true
+  enforce_types: true
+
+# Logging & Observability
+logging:
+  structured_logging_required: true
+  minimum_log_level: "INFO"
+  metrics_required: true
+  tracing_required: true
+
+# Review Policies
+reviews:
+  required_approvers: 2
+  senior_approval_required: true
+  lint_checks_required: true
+  security_checks_required: true
+
+# Context Management
+context_limits:
+  max_files_per_query: 12
+  auto_include_related: true
+  suggest_missing_context: true
+
+# Quality Gates (adaptive)
+quality_requirements:
+  security_scan: "mandatory"
+  performance_check: "required"
+  accessibility_audit: "required"
+  documentation_coverage: 90
+  logging_coverage: 80
+  test_coverage: 80
+
+# Workflow Controls
+workflow:
+  require_phase_validation: true
+  max_iterations_per_phase: 3
+  auto_save_checkpoints: true
+  enable_rollback: true
+
+# Integration Settings
+cursor_integration:
+  auto_todo_generation: true
+  smart_file_suggestions: true
+  code_action_hints: true
+  live_documentation: true
