@@ -1,8 +1,6 @@
-
-`````markdown
 # Code Review Guideline & Checklist
 
-## 1. Overview & Guiding Principles
+## 1\. Overview & Guiding Principles
 
 This document provides a comprehensive framework for conducting effective, collaborative, and context-rich code reviews. Its purpose is to ensure code quality, share knowledge, and foster a culture of continuous improvement.
 
@@ -10,11 +8,10 @@ This document provides a comprehensive framework for conducting effective, colla
 
 ---
 
-## 2. Part I: For the Author (Engineering the Context)
+## 2\. Part I: For the Author (Engineering the Context)
 
 A high-quality review starts with a high-quality Pull Request (PR). Before requesting a review, the author **must** provide the following context. Use this as your PR description template.
 
-````markdown
 ### 1. What is the purpose of this change? (The "Why")
 
 **Ticket:** `[Link to Ticket]`
@@ -37,7 +34,6 @@ A high-quality review starts with a high-quality Pull Request (PR). Before reque
 -   [ ] I have added and updated relevant tests.
 -   [ ] I have updated the documentation.
 -   [ ] I have confirmed the CI pipeline passes.
-`````
 
 -----
 
