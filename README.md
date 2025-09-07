@@ -43,6 +43,7 @@ PolyChronos comes with a full team of AI savants. Here are the core leaders you'
 -   **Persona-Driven**: Every task is handled by an AI expert with the specific skills and mindset for the job. You're not just prompting an AI; you're collaborating with a specialist.
 -   **Phase-Aware**: The framework understands the software development lifecycle. It guides you from discovery and planning through to deployment and maintenance with structured phases.
 -   **Context-First**: AIs are only as good as their context. Our templates are designed to build a rich, multi-layered understanding of your project, ensuring the AI's outputs are deeply relevant and intelligent.
+-   **Mandate-Driven Quality**: The entire framework operates under the laws of the **`QualityMandate.md`**. This document ensures an uncompromising, end-to-end quality process is followed for every single task, every time.
 
 ---
 
