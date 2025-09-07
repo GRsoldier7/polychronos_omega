@@ -1,5 +1,3 @@
-
-````markdown
 # Observability Strategy: [Project/System Name]
 
 | | |
@@ -12,7 +10,7 @@
 
 ---
 
-## 1. Overview & Goals
+## 1\. Overview & Goals
 
 ### 1.1. Executive Summary
 This document outlines the comprehensive strategy for logging, monitoring, metrics, and tracing for the **[Project/System Name]**. The goal is to establish a robust observability framework that enables developers and operators to proactively monitor system health, rapidly diagnose and resolve issues, and make data-driven decisions about performance and scalability.
@@ -26,7 +24,7 @@ This strategy directly supports the following key objectives:
 
 ---
 
-## 2. The Three Pillars of Observability
+## 2\. The Three Pillars of Observability
 
 Our strategy is built upon the three foundational pillars of observability: Logs, Metrics, and Traces.
 
@@ -63,16 +61,6 @@ All log entries should adhere to a consistent schema.
   "error.message": null,
   "error.stack": null
 }
-````
-
-### 2.2. Pillar 2: Metrics
-
-Metrics are numerical, aggregatable data points measured over time. They are ideal for building dashboards and triggering alerts. We will focus on the four "Golden Signals":
-
-  - **Latency:** The time it takes to serve a request. (e.g., `http.server.request.duration`)
-  - **Traffic:** The amount of demand the system is under. (e.g., `http.server.active_requests`, `requests_per_second`)
-  - **Errors:** The rate of requests that fail. (e.g., `http.server.request.errors_total`)
-  - **Saturation:** How "full" the service is (e.g., CPU, memory, disk utilization).
 
 ### 2.3. Pillar 3: Distributed Tracing
 
