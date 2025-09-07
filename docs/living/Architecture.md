@@ -15,13 +15,12 @@
 ### 1.1. Executive Summary
 This document details the architecture for the **[Project/System Name]**. It describes the system's components, their interactions, the technologies used, and the reasoning behind key architectural decisions. This document serves as the technical blueprint for the development team and ensures alignment with business objectives outlined in the [Product Requirements Document (PRD)](./PRD.md).
 
-### 1.2. Architectural Goals & Drivers
+#### 1.2. Architectural Goals & Drivers
 The architecture is designed to meet the following primary goals and principles:
--   **Scalability:** [e.g., Handle a 10x increase in user traffic over the next 2 years with horizontal scaling.]
--   **Reliability:** [e.g., Achieve 99.95% uptime through redundancy and fault-tolerant design.]
--   **Maintainability:** [e.g., Enable small, independent teams to deploy features with minimal dependencies.]
--   **Security:** [e.g., Comply with SOC 2 standards by isolating services and enforcing a zero-trust security model.]
--   **Cost-Effectiveness:** [e.g., Utilize serverless components and managed services to minimize idle infrastructure costs and operational overhead.]
+-   **Scalability:** [e.g., Handle a 10x increase in user traffic over the next 2 years.]
+-   **Reliability:** [e.g., Achieve 99.95% uptime through redundancy and fault tolerance.]
+-   **Efficiency & Reuse:** **Leverage available platform infrastructure, including MCP servers, whenever possible to reduce operational overhead and accelerate delivery.**
+-   **Security:** [e.g., Comply with SOC 2 standards.]
 
 ---
 
