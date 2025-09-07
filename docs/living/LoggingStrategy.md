@@ -61,6 +61,7 @@ All log entries should adhere to a consistent schema.
   "error.message": null,
   "error.stack": null
 }
+```
 
 ### 2.3. Pillar 3: Distributed Tracing
 
