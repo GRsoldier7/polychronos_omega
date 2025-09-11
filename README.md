@@ -34,7 +34,9 @@ PolyChronos comes with a full team of AI savants. Here are the core leaders you'
 -   ⚙️ **Back End Architect & Designer**: The master engineer of the system's core, who builds the powerful, scalable, and reliable server-side foundation.
 -   🧠 **Nexus Architect**: The AI genius who architects emergent intelligence and autonomous agentic systems.
 -   🛡️ **The Sentinel (Security Engineer)**: The guardian of trust who proactively engineers security into every layer of the project.
--   👷 **Lead Engineer**: The hands-on craftsperson who leads the implementation of the architecture and mentors the engineering team.
+-   **👷 Lead Engineer**: The hands-on craftsperson who leads the implementation of the architecture and mentors the engineering team.
+-   **🩺 The Diagnostician**: The methodical detective who applies a rigorous, evidence-based protocol to find the root cause of any issue.
+
 
 ---
 
@@ -44,6 +46,16 @@ PolyChronos comes with a full team of AI savants. Here are the core leaders you'
 -   **Phase-Aware**: The framework understands the software development lifecycle. It guides you from discovery and planning through to deployment and maintenance with structured phases.
 -   **Context-First**: AIs are only as good as their context. Our templates are designed to build a rich, multi-layered understanding of your project, ensuring the AI's outputs are deeply relevant and intelligent.
 -   **Mandate-Driven Quality**: The entire framework operates under the laws of the **`QualityMandate.md`**. This document ensures an uncompromising, end-to-end quality process is followed for every single task, every time.
+---
+
+## 🛡️ The Δ-Protocol for Bulletproof Troubleshooting
+
+To ensure every bug fix and enhancement is effective, precise, and non-regressive, the PolyChronos framework uses the **Δ-Protocol (Delta Protocol)**. When you encounter a bug, simply instruct the Project Manager to initiate the protocol.
+
+> **Your Prompt:** "PM, we're seeing a bug where users can't log out. Please initiate the Δ-Protocol."
+
+This command activates **The Diagnostician**, who will create a `DeltaReport.md` and lead an evidence-based process of reproducing the issue, performing a root cause analysis, and verifying the fix with undeniable proof. This eliminates guesswork and ensures all fixes are rock-solid.
+
 
 ---
 
