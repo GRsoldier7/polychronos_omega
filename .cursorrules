@@ -1,7 +1,33 @@
-# PolyChronos Ω v5.0 Project Rules
+# PolyChronos Ω v5.5 — Protocol-Enforced Project Rules
+
+# --- ENHANCEMENT: Explicit Mandate Enforcement ---
+# This is the highest priority rule. The AI must treat the QualityMandate.md
+# as the constitutional law of the project.
+require_mandate_adherence: true
+mandate_document: "/docs/living/QualityMandate.md"
 
 persona_default: "Project Manager"
 persona_fallback: "Savant Architect"
+
+# --- ENHANCEMENT: Persona-Specific Rule Overrides ---
+persona_rules:
+  "Project Manager":
+    # Enforces the PM's role as the guardian of the process.
+    always_verify: "definition_of_done"
+  "The Diagnostician":
+    # Allows the Diagnostician to pull more files for deep investigation.
+    context_limits:
+      max_files_per_query: 25
+  "Nexus Architect":
+    context_limits:
+      max_files_per_query: 20
+  "The Sentinel":
+    quality_requirements:
+      security_scan: "critical_only"
+    always_invoke: true
+  "The Loremaster":
+    quality_requirements:
+      documentation_coverage: 95
 
 # Code Quality Standards
 code_standards:
@@ -22,9 +48,27 @@ logging:
 # Review Policies
 reviews:
   required_approvers: 2
-  senior_approval_required: true
+  senior_approval_required: true # e.g., Lead Engineer or Architect
   lint_checks_required: true
-  security_checks_required: true
+  security_checks_required: true # Invokes The Sentinel
+
+# --- ENHANCEMENT: Granular Definition of Done (DoD) Checks ---
+# These rules directly enforce the criteria in your QualityMandate.md
+definition_of_done:
+  user_story:
+    requires_unit_tests: true
+    requires_integration_tests: true
+    requires_peer_review: true
+    requires_security_scan_pass: true
+    requires_loremaster_signoff_on_docs: true # Ensures docs are updated
+  feature:
+    requires_end_to_end_tests: true
+    requires_nfr_validation: true # Checks against Architecture.md NFRs
+    requires_stakeholder_demo: true
+  release:
+    requires_full_regression_test: true
+    max_open_critical_bugs: 0
+    max_open_major_bugs: 5
 
 # Context Management
 context_limits:
@@ -32,25 +76,35 @@ context_limits:
   auto_include_related: true
   suggest_missing_context: true
 
-# Quality Gates (adaptive)
-quality_requirements:
-  security_scan: "mandatory"
-  performance_check: "required"
-  accessibility_audit: "required"
-  documentation_coverage: 90
-  logging_coverage: 80
-  test_coverage: 80
-
-# Workflow Controls
+# Phase-Aware Workflow Controls
 workflow:
   require_phase_validation: true
   max_iterations_per_phase: 3
-  auto_save_checkpoints: true
-  enable_rollback: true
+  phase_specific_rules:
+    "Discovery":
+      require_tests: false
+    "Implementation":
+      require_tests: true
+    "Pre-Release":
+      quality_requirements:
+        performance_check: "mandatory"
+        test_coverage: 95
 
-# Integration Settings
-cursor_integration:
+# Advanced Agentic Behavior
+agentic_behavior:
+  auto_invoke_persona:
+    on_file_type:
+      ".tf": "DevOps Lead"
+      ".sql": "Back End Architect & Designer"
+    on_keyword:
+      # --- NEW: Automatically engage the troubleshooting protocol ---
+      "bug": "Diagnostician"
+      "fix": "Diagnostician"
+      "error": "Diagnostician"
+      "regression": "Diagnostician"
+      "not working": "Diagnostician"
+      # ---
+      "authentication": "Sentinel"
+      "payment": "Sentinel"
+      "model.train": "AI ML Nexus Architect"
   auto_todo_generation: true
-  smart_file_suggestions: true
-  code_action_hints: true
-  live_documentation: true
